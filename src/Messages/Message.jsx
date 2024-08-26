@@ -1,6 +1,6 @@
 import React from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {gmAction, geAction} from '../redux/Messages/Message.action'
+import {gmActions, geAction} from '../redux/Messages/Message.action'
 const Message = () => {
   
   let dispatch = useDispatch()
@@ -8,7 +8,7 @@ const Message = () => {
         return state
     })
   let gmHandler=()=>{
-    dispatch(gmAction())
+    dispatch(gmActions())
   }
   let geHanlder=()=>{
     dispatch(geAction())
