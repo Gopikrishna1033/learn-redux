@@ -1,23 +1,15 @@
-import React from 'react'
-import Message from './Messages/Message'
-import { store } from './redux/Store'
-import { Provider } from 'react-redux'
-function App(){
+import Products from "./Products/Products"
+import { Provider } from "react-redux"
+import { store } from "./Product_redux/Store"
+let App = ()=>{
 
-
-
-  return  <div>
- 
-  <Provider store={store}>
-    <h1>App Component</h1>
-    <hr />
-    <Message/>
-  </Provider>
-</div>
-
-
+  return <div>
+    <Provider store = {store}>
+      {/* <h3>App Component</h3>
+    <hr /> */}
+    <Products/>
+    </Provider>
+    
+  </div>
 }
-
-
-
 export default App
